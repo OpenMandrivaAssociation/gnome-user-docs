@@ -1,6 +1,6 @@
 Summary: GNOME User Documentation
 Name: gnome-user-docs
-Version: 2.18.0
+Version: 2.18.1
 Release: %mkrel 1
 License: FDL
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
@@ -50,5 +50,3 @@ if [ -x %{_bindir}/scrollkeeper-update ]; then %{_bindir}/scrollkeeper-update -q
 %doc README NEWS
 %dir %{_datadir}/omf/*
 %{_datadir}/omf/*/*-C.omf
-
-
