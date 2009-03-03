@@ -1,6 +1,6 @@
 Summary: GNOME User Documentation
 Name: gnome-user-docs
-Version: 2.24.2
+Version: 2.25.1
 Release: %mkrel 1
 License: GFDL
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
