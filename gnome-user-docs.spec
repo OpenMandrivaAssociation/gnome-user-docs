@@ -1,19 +1,16 @@
 Summary: GNOME User Documentation
 Name: gnome-user-docs
-Version: 2.32.0
-Release: %mkrel 2
+Version: 3.2.2
+Release: 1
 License: GFDL
-Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
+Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
 Group: Books/Other
 Url: http://www.gnome.org/
 BuildArch: noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}-root
-BuildRequires: scrollkeeper pkgconfig
-BuildRequires: gnome-doc-utils >= 0.5.6 libxslt-proc
-Requires(post): scrollkeeper >= 0.3
-Requires(postun): scrollkeeper >= 0.3
-Obsoletes: gnome-users-guide
-Provides: gnome-users-guide
+
+BuildRequires: gnome-doc-utils >= 0.5.6
+BuildRequires: itstool
+BuildRequires: xsltproc
 
 %description
 This package contains the GNOME Glossary, Introduction to GNOME, and a Unix
@@ -24,29 +21,31 @@ Primer.
 
 %build
 %configure2_5x
-# parallel compilation is broken
-make
+
+%make
 
 %install
 %makeinstall_std
 
-%find_lang %{name} --with-gnome --all-name
-rm -rf %buildroot/var/lib/scrollkeeper
-for omf in %buildroot%_datadir/omf/*/*[_-]??.omf;do 
-echo "%lang($(basename $omf|sed -e s/.*-// -e s/.omf//)) $(echo $omf|sed -e s!%buildroot!!)" >> %name.lang
-done
+#find_lang gnome-help
 
-%clean 
-rm -rf %{buildroot}
-
-%post
-if [ -x %{_bindir}/scrollkeeper-update ]; then %{_bindir}/scrollkeeper-update -q || true ; fi
-
-%postun
-if [ -x %{_bindir}/scrollkeeper-update ]; then %{_bindir}/scrollkeeper-update -q || true ; fi
-
-%files -f %{name}.lang
-%defattr(-, root, root)
+%files 
+#FIXME: find-lang can't deal with %{_datadir}/help
+#-f gnome-help.lang
 %doc README NEWS
-%dir %{_datadir}/omf/*
-%{_datadir}/omf/*/*-C.omf
+%{_datadir}/help/C/gnome-help
+%lang(ca) %{_datadir}/help/ca/gnome-help
+%lang(de) %{_datadir}/help/de/gnome-help
+%lang(es) %{_datadir}/help/es/gnome-help
+%lang(fi) %{_datadir}/help/fi/gnome-help
+%lang(fr) %{_datadir}/help/fr/gnome-help
+%lang(gl) %{_datadir}/help/gl/gnome-help
+%lang(hi) %{_datadir}/help/hi/gnome-help
+%lang(hu) %{_datadir}/help/hu/gnome-help
+%lang(nl) %{_datadir}/help/nl/gnome-help
+%lang(pt_BR) %{_datadir}/help/pt_BR/gnome-help
+%lang(sl) %{_datadir}/help/sl/gnome-help
+%lang(sv) %{_datadir}/help/sv/gnome-help
+%lang(ru) %{_datadir}/help/ru/gnome-help
+%lang(vi) %{_datadir}/help/vi/gnome-help
+
