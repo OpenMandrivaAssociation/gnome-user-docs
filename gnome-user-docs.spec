@@ -1,6 +1,6 @@
 Summary: GNOME User Documentation
 Name: gnome-user-docs
-Version: 3.2.2
+Version: 3.4.1
 Release: 1
 License: GFDL
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
