@@ -8,9 +8,9 @@ Group: Books/Other
 Url: http://www.gnome.org/
 BuildArch: noarch
 
-BuildRequires: gnome-doc-utils >= 0.5.6
 BuildRequires: itstool
 BuildRequires: xsltproc
+BuildRequires: pkgconfig(gnome-doc-utils)
 
 %description
 This package contains the GNOME Glossary, Introduction to GNOME, and a Unix
