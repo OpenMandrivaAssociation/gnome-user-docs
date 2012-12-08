@@ -1,2 +1,4 @@
 sources:
-  "gnome-user-docs-3.4.2.tar.xz:"	bf481370c8c1da7d84f2b3b3b149ac3e1ef9b97c
+  gnome-user-docs-3.6.1.tar.xz: 20fffd2f233388b47b1b8f1f64cc32a91ec52697
+---
+  gnome-user-docs-3.6.2.tar.xz: 3600f135829fcc97d5e6bf088b3743d4add9ebf5

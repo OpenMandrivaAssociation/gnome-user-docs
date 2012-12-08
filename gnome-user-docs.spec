@@ -1,9 +1,9 @@
 Summary: GNOME User Documentation
 Name: gnome-user-docs
-Version: 3.4.2
+Version: 3.6.2
 Release: 1
 License: GFDL
-Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.xz
+Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/3.6/%{name}-%{version}.tar.xz
 Group: Books/Other
 Url: http://www.gnome.org/
 BuildArch: noarch
@@ -33,7 +33,8 @@ Primer.
 #FIXME: find-lang can't deal with %{_datadir}/help
 #-f gnome-help.lang
 %doc README NEWS
-%{_datadir}/help/C/gnome-help
+%{_datadir}/help/C/*
+%lang(cs) %{_datadir}/help/cs/gnome-help
 %lang(ca) %{_datadir}/help/ca/gnome-help
 %lang(de) %{_datadir}/help/de/gnome-help
 %lang(el) %{_datadir}/help/el/gnome-help
@@ -57,4 +58,3 @@ Primer.
 %lang(sv) %{_datadir}/help/sv/gnome-help
 %lang(te) %{_datadir}/help/te/gnome-help
 %lang(vi) %{_datadir}/help/vi/gnome-help
-
