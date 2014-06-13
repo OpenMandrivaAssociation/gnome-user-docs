@@ -1,7 +1,7 @@
 Summary: GNOME User Documentation
 Name: gnome-user-docs
 Version: 3.6.2
-Release: 5
+Release: 6
 License: GFDL
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/3.6/%{name}-%{version}.tar.xz
 Group: Books/Other
