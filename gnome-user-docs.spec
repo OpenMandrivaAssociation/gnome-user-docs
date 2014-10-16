@@ -1,9 +1,9 @@
 Summary: GNOME User Documentation
 Name: gnome-user-docs
-Version: 3.6.2
-Release: 7
+Version: 3.14.1
+Release: 1
 License: GFDL
-Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/3.6/%{name}-%{version}.tar.xz
+Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/3.14/%{name}-%{version}.tar.xz
 Group: Books/Other
 Url: http://www.gnome.org/
 BuildArch: noarch
@@ -20,7 +20,7 @@ Primer.
 %setup -q
 
 %build
-%configure2_5x
+%configure
 
 %make
 
@@ -34,6 +34,7 @@ Primer.
 #-f gnome-help.lang
 %doc README NEWS
 %{_datadir}/help/C/*
+%lang(as) %{_datadir}/help/as/gnome-help
 %lang(cs) %{_datadir}/help/cs/gnome-help
 %lang(ca) %{_datadir}/help/ca/gnome-help
 %lang(de) %{_datadir}/help/de/gnome-help
@@ -42,12 +43,15 @@ Primer.
 %lang(fi) %{_datadir}/help/fi/gnome-help
 %lang(fr) %{_datadir}/help/fr/gnome-help
 %lang(gl) %{_datadir}/help/gl/gnome-help
+%lang(gu) %{_datadir}/help/gu/gnome-help
 %lang(hi) %{_datadir}/help/hi/gnome-help
 %lang(hu) %{_datadir}/help/hu/gnome-help
 %lang(id) %{_datadir}/help/id/gnome-help
 %lang(it) %{_datadir}/help/it/gnome-help
 %lang(ja) %{_datadir}/help/ja/gnome-help
+%lang(kn) %{_datadir}/help/kn/gnome-help
 %lang(lv) %{_datadir}/help/lv/gnome-help
+%lang(mr) %{_datadir}/help/mr/gnome-help
 %lang(nl) %{_datadir}/help/nl/gnome-help
 %lang(pa) %{_datadir}/help/pa/gnome-help
 %lang(pt_BR) %{_datadir}/help/pt_BR/gnome-help
@@ -56,5 +60,7 @@ Primer.
 %lang(sr) %{_datadir}/help/sr/gnome-help
 %lang(sr@latin) %{_datadir}/help/sr@latin/gnome-help
 %lang(sv) %{_datadir}/help/sv/gnome-help
+%lang(ta) %{_datadir}/help/ta/gnome-help
 %lang(te) %{_datadir}/help/te/gnome-help
 %lang(vi) %{_datadir}/help/vi/gnome-help
+%lang(zh_CN) %{_datadir}/help/zh_CN/gnome-help
