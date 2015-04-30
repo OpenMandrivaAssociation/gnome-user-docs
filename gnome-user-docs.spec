@@ -1,6 +1,6 @@
 Summary: GNOME User Documentation
 Name: gnome-user-docs
-Version: 3.14.1
+Version:  3.16.1
 Release: 2
 License: GFDL
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/3.14/%{name}-%{version}.tar.xz
@@ -29,7 +29,7 @@ Primer.
 
 #find_lang gnome-help
 
-%files 
+%files
 #FIXME: find-lang can't deal with %{_datadir}/help
 #-f gnome-help.lang
 %doc README NEWS

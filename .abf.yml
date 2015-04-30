@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   gnome-user-docs-3.14.1.tar.xz: 34e88530508d06b14a15787a2b45521c73bfcecd
+sources:
+  gnome-user-docs-3.16.1.tar.xz: b0082ff4320169ed644ee44a6702f7da5c1f446b
