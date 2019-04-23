@@ -1,8 +1,8 @@
 %define _disable_rebuild_configure 1
 Summary: GNOME User Documentation
 Name: gnome-user-docs
-Version:  3.30.2
-Release: 2
+Version:  3.32.1
+Release: 1
 License: GFDL
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/3.14/%{name}-%{version}.tar.xz
 Group: Books/Other
@@ -23,10 +23,10 @@ Primer.
 %build
 %configure
 
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %find_lang gnome-help --with-gnome --all-name
 
