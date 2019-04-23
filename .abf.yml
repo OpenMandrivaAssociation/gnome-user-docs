@@ -1,7 +1,2 @@
-removed_sources:
-  gnome-user-docs-3.14.1.tar.xz: 34e88530508d06b14a15787a2b45521c73bfcecd
-  gnome-user-docs-3.16.1.tar.xz: b0082ff4320169ed644ee44a6702f7da5c1f446b
-  gnome-user-docs-3.18.1.tar.xz: 5368fd137a96d22c580d2e3d36858c5f7f7dd9ed
 sources:
-  gnome-user-docs-3.30.1.tar.xz: 05337042d674e336922f4fba747bda5f2922905f
-  gnome-user-docs-3.30.2.tar.xz: 63266ccd3809edf7a6a2d2e12a07c83776642e05
+  gnome-user-docs-3.32.1.tar.xz: 4453962c850e32d392edfde9a0e24be9016fee47
