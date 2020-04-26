@@ -1,7 +1,7 @@
 %define _disable_rebuild_configure 1
 Summary: GNOME User Documentation
 Name: gnome-user-docs
-Version:  3.36.1
+Version:  3.36.2
 Release: 1
 License: GFDL
 Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/3.14/%{name}-%{version}.tar.xz
@@ -32,5 +32,3 @@ Primer.
 
 %files -f gnome-help.lang
 %doc README NEWS
-
-
