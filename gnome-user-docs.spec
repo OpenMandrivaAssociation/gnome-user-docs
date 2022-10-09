@@ -31,4 +31,4 @@ Primer.
 %find_lang gnome-help --with-gnome --all-name
 
 %files -f gnome-help.lang
-%doc README NEWS
+%doc README* NEWS
