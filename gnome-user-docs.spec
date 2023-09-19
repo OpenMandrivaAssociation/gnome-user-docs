@@ -1,12 +1,12 @@
 %define _disable_rebuild_configure 1
 Summary: GNOME User Documentation
 Name: gnome-user-docs
-Version: 44.3
+Version: 45.0
 Release: 1
 License: GFDL
-Source0: ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/3.14/%{name}-%{version}.tar.xz
+Source0: https://ftp.gnome.org/pub/GNOME/sources/%{name}/3.14/%{name}-%{version}.tar.xz
 Group: Books/Other
-Url: http://www.gnome.org/
+Url: https://www.gnome.org/
 BuildArch: noarch
 
 BuildRequires: itstool
