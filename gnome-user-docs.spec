@@ -9,6 +9,7 @@ Group: Books/Other
 Url: https://www.gnome.org/
 BuildArch: noarch
 
+BuildRequires: gettext
 BuildRequires: itstool
 BuildRequires: xsltproc
 BuildRequires: pkgconfig(gnome-doc-utils)
