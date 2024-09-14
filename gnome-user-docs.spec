@@ -1,7 +1,7 @@
 %define _disable_rebuild_configure 1
 Summary: GNOME User Documentation
 Name: gnome-user-docs
-Version: 46.4
+Version: 47.beta
 Release: 1
 License: GFDL
 Source0: https://ftp.gnome.org/pub/GNOME/sources/%{name}/3.14/%{name}-%{version}.tar.xz
