@@ -2,9 +2,9 @@
 Summary: GNOME User Documentation
 Name: gnome-user-docs
 Version: 48.2
-Release: 1
+Release: 2
 License: GFDL
-Source0: https://ftp.gnome.org/pub/GNOME/sources/%{name}/3.14/%{name}-%{version}.tar.xz
+Source0: https://ftp.gnome.org/pub/GNOME/sources/%{name}/48/%{name}-%{version}.tar.xz
 Group: Books/Other
 Url: https://www.gnome.org/
 BuildArch: noarch
