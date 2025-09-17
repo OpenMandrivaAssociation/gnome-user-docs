@@ -1,8 +1,8 @@
 %define _disable_rebuild_configure 1
 Summary: GNOME User Documentation
 Name: gnome-user-docs
-Version: 48.2
-Release: 2
+Version: 49.0
+Release: 1
 License: GFDL
 Source0: https://ftp.gnome.org/pub/GNOME/sources/%{name}/48/%{name}-%{version}.tar.xz
 Group: Books/Other
@@ -19,7 +19,7 @@ This package contains the GNOME Glossary, Introduction to GNOME, and a Unix
 Primer.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %configure
