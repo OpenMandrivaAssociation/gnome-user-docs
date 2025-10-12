@@ -1,7 +1,7 @@
 %define _disable_rebuild_configure 1
 Summary: GNOME User Documentation
 Name: gnome-user-docs
-Version: 49.0
+Version: 49.1
 Release: 1
 License: GFDL
 Source0: https://ftp.gnome.org/pub/GNOME/sources/%{name}/48/%{name}-%{version}.tar.xz
