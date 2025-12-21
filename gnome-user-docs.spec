@@ -9,6 +9,11 @@ Group: Books/Other
 Url: https://www.gnome.org/
 BuildArch: noarch
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: gettext
 BuildRequires: itstool
 BuildRequires: xsltproc
