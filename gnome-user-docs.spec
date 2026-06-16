@@ -1,7 +1,7 @@
 %define _disable_rebuild_configure 1
 Summary: GNOME User Documentation
 Name: gnome-user-docs
-Version: 50.0
+Version: 50.2
 Release: 1
 License: GFDL
 Source0: https://ftp.gnome.org/pub/GNOME/sources/%{name}/48/%{name}-%{version}.tar.xz
@@ -9,11 +9,11 @@ Group: Books/Other
 Url: https://www.gnome.org/
 BuildArch: noarch
 
-BuildRequires:	autoconf
-BuildRequires:	automake
-BuildRequires:	libtool-base
-BuildRequires:	slibtool
-BuildRequires:	make
+BuildRequires: autoconf
+BuildRequires: automake
+BuildRequires: libtool-base
+BuildRequires: slibtool
+BuildRequires: make
 BuildRequires: gettext
 BuildRequires: itstool
 BuildRequires: xsltproc
