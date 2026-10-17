@@ -1,7 +1,7 @@
 %define _disable_rebuild_configure 1
 Summary: GNOME User Documentation
 Name: gnome-user-docs
-Version: 50.4
+Version: 51.0
 Release: 1
 License: GFDL
 Source0: https://ftp.gnome.org/pub/GNOME/sources/%{name}/48/%{name}-%{version}.tar.xz
@@ -9,15 +9,11 @@ Group: Books/Other
 Url: https://www.gnome.org/
 BuildArch: noarch
 
-BuildRequires: autoconf
-BuildRequires: automake
-BuildRequires: libtool-base
-BuildRequires: slibtool
-BuildRequires: make
-BuildRequires: gettext
+BuildRequires: meson
 BuildRequires: itstool
 BuildRequires: xsltproc
 BuildRequires: pkgconfig(gnome-doc-utils)
+BuildRequires: yelp-tools
 
 %description
 This package contains the GNOME Glossary, Introduction to GNOME, and a Unix
@@ -27,12 +23,11 @@ Primer.
 %autosetup -p1
 
 %build
-%configure
-
-%make_build
+%meson
+%meson_build
 
 %install
-%make_install
+%meson_install
 
 %find_lang gnome-help --with-gnome --all-name
 
