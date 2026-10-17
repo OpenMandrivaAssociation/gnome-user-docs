@@ -10,6 +10,7 @@ Url: https://www.gnome.org/
 BuildArch: noarch
 
 BuildRequires: meson
+BuildRequires: gettext
 BuildRequires: itstool
 BuildRequires: xsltproc
 BuildRequires: pkgconfig(gnome-doc-utils)
